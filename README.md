@@ -9,6 +9,10 @@ This code runs Python 3.6 with the following libraries:
 + Pytorch 1.2.0
 + Transformers 2.9.1
 + GTX 1080 Ti
++ 除了上述的版本问题，我在复现时还遇到一些问题，需要注意。
+1.将文件夹dataset的路径改到RGAT-BERT下，并且把dataset/Biaffine/glove/Restaurants的Restaurants放到dataset的下一级即可
+2.bert_train的文件下的output_merge的默认改为gate。
+3.bert_train的文件下的--model的默认改为rgat
 
 You can also create an virtual environments with `conda` by run
 
